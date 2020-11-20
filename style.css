@@ -1,0 +1,87 @@
+:root {
+  --base: #008c8c;
+  --spacing: 50%;
+  --blur: 0px;
+  --inversion: 0%;
+  --sepia: 0%;
+  --saturation: 100%;
+  --spice: 0deg;
+}
+
+/* regular styles*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.controllers {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+  min-height: 100%;
+  margin: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+label {
+  line-height: 40px;
+  font-size: 28px;
+}
+h2 {
+  color: aqua;
+  filter: hue-rotate(180deg) invert(100%) contrast(140%);
+  font-size: 36px;
+}
+img {
+  /*  display: block;*/
+  max-height: 90vh;
+  max-width: 90vh;
+}
+.image {
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+body {
+  background-color: var(--base);
+}
+img {
+  width: var(--spacing, 50%);
+  background: var(--base);
+  filter: blur(var(--blur, 0px)) invert(var(--inversion, 0%))
+    sepia(var(--sepia, 0%)) saturate(var(--saturation, 100%))
+    hue-rotate(var(--spice, 0deg));
+}
+
+@media (max-width: 768px) {
+  label {
+    line-height: 20px;
+    font-size: 18px;
+  }
+}
