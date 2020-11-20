@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables and JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="controllers">
+            <h2 class="filters">Photo Filters</h2>
+            <label for="base">Background Color
+                <input id="base" type="color" name="base" value="#008C8C">
+            </label>
+
+            <br>
+            <label for="spacing">Photo size
+                <input id="spacing" type="range" name="spacing" min="20" max="90" value="50" data-sizing="%">
+            </label>
+
+            <br>
+            <label for="blur">Blur
+                <input id="blur" type="range" name="blur" min="0" max="6" value="0" data-sizing="px">
+            </label>
+
+            <br>
+            <label for="inversion">Inversion
+                <input id="inversion" type="range" name="inversion" min="0" max="100" value="0" data-sizing="%">
+            </label>
+
+            <br>
+            <label for="sepia">Sepia
+                <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+            </label>
+
+            <br>
+            <label for="saturation">Saturation
+                <input id="saturation" type="range" name="saturation" min="0" max="100" value="100" data-sizing="%">
+            </label>
+
+            <br>
+            <label for="spice">Spice
+                <input id="spice" type="range" name="spice" min="0" max="360" value="0" data-sizing="deg">
+            </label>
+
+        </div>
+
+        <div class="image">
+            <img src="photo2.jpg" alt="Human Photo">
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
